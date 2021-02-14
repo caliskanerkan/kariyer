@@ -1,24 +1,18 @@
 # kariyer
 
-## Project setup
+## Kurulum Client
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Proje Start
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### DB Start
+
 ```
-yarn build
+json-server --watch db
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
