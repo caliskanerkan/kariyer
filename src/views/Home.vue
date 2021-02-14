@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <Layout>
+    <Search />
+    <div>
+      <div class="title">Genel İlanlar</div>
+      <Jobs />
+    </div>
+  </Layout>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import Jobs from "@/components/Job/Jobs.vue";
+import Search from "@/components/Search.vue";
+import Layout from "@/components/Layout.vue";
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    Layout,
+    Jobs,
+    Search
+  },
+  methods: {
+    async getJobs() {
+      await this.$store.dispatch("getJobs");
+    }
+  },
+  async created() {
+    this.$store.commit("RESET_QUERY_PARAMS");
+    await this.getJobs();
   }
 };
 </script>

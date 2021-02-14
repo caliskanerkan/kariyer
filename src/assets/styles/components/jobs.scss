@@ -1,0 +1,124 @@
+.jobs {
+  display: flex;
+  flex: 1;
+}
+.jobs--row {
+  flex-flow: row wrap;
+}
+.jobs--row--4 {
+  margin: 10px;
+  flex: 0 1 calc(33% - 20px);
+}
+.jobs--column {
+  flex-flow: column nowrap;
+  flex: 1;
+  padding: 5px;
+}
+.job {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  padding: 10px 20px;
+}
+.job--title {
+  color: $primary;
+  font-weight: $bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.job--company {
+  color: $dark;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.job--location {
+  font-size: 13px;
+  color: $secondary;
+}
+
+.job-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: $white;
+}
+.job-details--container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+.job-details--apply {
+  display: flex;
+  padding: 15px 0px;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  div {
+    display: flex;
+    flex-flow: column nowrap;
+    span {
+      color: $dark;
+      font-size: 16px;
+      font-weight: $thin;
+    }
+  }
+  button {
+    background: $primary;
+  }
+}
+
+.job-details--content {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+}
+.job-details--description {
+  padding: 10px 0px;
+  h1 {
+    font-size: 25px;
+    color: $primary;
+  }
+  p {
+      font-size: 14px;
+      font-weight: $thin;
+      color: $dark;
+      padding: 10px 0px;
+  }
+}
+
+.job-details--requirements {
+    background: $light;
+    border: 2px solid #e7e7e7;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.job-details--sub-title {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 24px;
+    color: $primary;
+}
+
+.job-details--requirements--column {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    background: $white;
+    padding: 10px 50px;
+    span {
+        display: flex;
+        flex: 0 1 100px;
+        font-weight: $bold;
+        color: #666;
+    }
+    div {
+        font-weight: $thin;
+    }
+}
+
+.job--details__pd-30 {
+    padding: 30px 0px;
+    background: $white;
+}

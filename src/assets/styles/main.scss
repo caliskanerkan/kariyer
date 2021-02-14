@@ -1,0 +1,18 @@
+@import './base/reset';
+@import './base/typography';
+@import './utils/variables';
+@import './utils/helpers';
+@import './components/jobs.scss';
+@import './components/search.scss';
+@import './components/multiselectinput.scss';
+@import './components/button.scss';
+@import './components/header.scss';
+html, body {
+    height: 100%;
+}
+.title {
+    font-size: 24px;
+    font-weight: $bold;
+    color: $dark;
+    padding: 10px;
+}
