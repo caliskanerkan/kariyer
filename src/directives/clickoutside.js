@@ -1,6 +1,6 @@
 import Vue from "vue";
 
-Vue.directive("click-outside", {
+export default Vue.directive("click-outside", {
   bind: function(el, binding, vNode) {
     // Provided expression must evaluate to a function.
     if (typeof binding.value !== "function") {

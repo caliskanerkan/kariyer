@@ -28,11 +28,13 @@
   </div>
 </template>
 <script>
-// eslint-disable-next-line no-unused-vars
 import clickOutside from "@/directives/clickoutside.js";
 import Checkbox from "./Checkbox.vue";
 import { mapState } from "vuex";
 export default {
+  directives: {
+    clickOutside
+  },
   components: {
     Checkbox
   },
